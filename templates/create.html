@@ -1,0 +1,51 @@
+<!-- <html>
+    <head>
+        <title>Ticket System</title>
+    </head>
+
+    <body>
+        <ul>
+            <li>
+                <a href="{{ url_for('create_ticket')}}">Blog Post</a>
+            </li>
+            <li>
+                <a href="{{ url_for('list_tickets')}}">View Page</a>
+            </li>
+        </ul>
+
+        <h1>Add a Blog Post</h1>
+
+        <form method="POST" action="{{ url_for('create_ticket') }}">
+            <label>Blog_title: </label>
+            <input type="text" name="blogtitle" required>
+            <br><br>
+            <label>Blog_body: </label>
+            <textarea name="blogbody" required></textarea>
+            <br><br>
+            <label>Category : </label>
+            <select name="category">
+                <option value="low">Technology</option>
+                <option value="medium">Environnment</option>
+                <option value="high">Health</option>
+                <option value="etc">Others</option>
+            </select>
+            <br><br>
+            <label>Added By: </label>
+            <input name="added_by" required>
+            <br><br>
+            <!-- <label>Assigned To: </label>
+            <input name="assigned_to">
+            <br><br>
+            <label>Comment: </label>
+            <input type="text" name="comment">
+            <br><br>
+            <label>Status: </label>
+            <select name="status">
+                <option value="open">Opened</option>
+                <option value="close">Closed</option>
+            </select> -->
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html> -->

@@ -1,0 +1,38 @@
+<!-- <html>
+    <head>
+        <title>Ticket System</title>
+    </head>
+
+    <body>
+        <ul>
+            <li>
+                <a href="{{ url_for('create_ticket')}}">Blog Post</a>
+            </li>
+            <li>
+                <a href="{{ url_for('list_tickets')}}">View Page</a>
+            </li>
+        </ul>
+
+        <h1>Listing Page</h1>
+        <table border="1">
+            <tr>
+                <!-- <th>ID</th> -->
+                <th>Blog title</th>
+                <th>Category</th>
+                <th>Added By</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            {% for ticket in all_tickets %}
+                <tr>
+                    <!-- <td>{{ ticket['id'] }}</td> -->
+                    <td>{{ ticket['blogtitle'] }}</td>
+                    <td>{{ ticket['category'] }}</td>
+                    <td>{{ ticket['added_by'] }}</td>
+                    <td>{{ ticket['status'] }}</td>
+                    <td><a href="{{ url_for('ticket_details', ticket_id=ticket['id'])}}">More Details</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html> -->
